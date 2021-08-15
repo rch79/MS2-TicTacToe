@@ -66,7 +66,7 @@ body {
 
 }
 
-/*----------------------------------------------------Start Ganme------------------------*/
+/*----------------------------------------------------Start Game------------------------*/
 
 #start-game-button {
 	clear: top;
@@ -81,6 +81,50 @@ body {
 	font-size: 0.6rem;
 	text-transform: bold;
 
+}
+
+/*----------------------------------------------------Player Scores------------------------*/
+
+
+#player-scores-div {
+	border-bottom: 15px solid black;
+}
+
+#player-scores-text {
+	height: 30px;
+	width: 100%;
+	font-size: .65rem;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 35px;
+}
+
+/*----------------------------------------------------Board------------------------*/
+.game-board
+{
+	width: 600px;
+	height: 600px;
+	margin: 0 auto;
+  	background-color: #34495e;
+	color: #fff;
+	border: 6px solid #2c3e50;
+	border-radius: 10px;
+	
+	display: grid;
+	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+.box
+{
+	border: 6px solid #2c3e50;
+	border-radius: 2px;
+	font-family: Bangers;
+	font-weight: bold;
+	font-size: 4em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /*--------------------------------------------------------Media Queries-------------*/
@@ -118,6 +162,10 @@ body {
 
 	#start-game-button {
 		font-size: 1rem;
+	}
+
+	#player-scores-text {
+		font-size: 1.2rem;
 	}		
 }
 
@@ -127,10 +175,14 @@ body {
 @media (min-width: 960px) {
 
 	#title {
-		font-size: 100px;
+		font-size: 80px;
 	}
 
 	#player-selection-text {
+		font-size: 2rem;
+	}
+
+	#player-scores-text {
 		font-size: 2rem;
 	}
 }
