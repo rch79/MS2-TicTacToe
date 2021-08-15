@@ -11,7 +11,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
-
+/*--------------------------------------------------------Main Title-------------*/
 #title {
 	font-family: 'Bangers', cursive;
 	font-weight: 400;
@@ -19,9 +19,44 @@ body {
 	font-style: bold;
 	text-align: center;
 	letter-spacing: 4px;
-	padding-top: 1px;
+	border-bottom: 15px solid black;
 }
 
+/*----------------------------------------------------Player Selection-------------*/
+#player-selection-text {
+	height: 30px;
+	width: 100%;
+	font-size: .65rem;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 35px;
+}
+
+.player-selection-buttons {
+	width: 20%;
+	text-align: center;
+	border: 5px solid black;
+	height:	100px;
+	line-height: 100px;
+	border-radius: 25px;
+	display: inline-block;
+	margin-top: 3%;
+	margin-left: 20%;
+}
+
+.player-selection-buttons > h3 {
+	font-size: 4em;
+	font-weight: 800;
+}
+
+#player-selection-X {
+
+}
+
+#player-selection-O {
+
+}
 
 
 
@@ -40,7 +75,11 @@ body {
 
 	#title {
 		font-size: 50px;
-	}	
+	}
+
+	#player-selection-text {
+		font-size: 1.2rem;
+	}		
 }
 
 
@@ -50,6 +89,10 @@ body {
 
 	#title {
 		font-size: 100px;
+	}
+
+	#player-selection-text {
+		font-size: 2rem;
 	}
 }
 
