@@ -1,7 +1,6 @@
-console.log("script test");
-//--------------------------------------------------------Start page and game page HTML code--------------
+//--------------------------------------------------------Start page and game page HTML code-----
 
-let start_page_html = `
+let startPageHTML = `
     <header>
         <div id="title">
             <h1>Tic-Tac-Toe</h1>
@@ -29,7 +28,7 @@ let start_page_html = `
     </section>
     <script src="assets/js/script.js"></script>`;
 
-let game_page_html = `
+let gamePageHTML = `
     <header>
         <div id="title">
             <h1>Tic-Tac-Toe</h1>
@@ -42,15 +41,15 @@ let game_page_html = `
     </section>
     <section id="board-grid">
         <div class="game-board">
-            <div class="box">X</div>
-            <div class="box">O</div>
-            <div class="box">O</div>
-            <div class="box">O</div>
-            <div class="box">X</div>
-            <div class="box">O</div>
-            <div class="box">O</div>
-            <div class="box">X</div>
-            <div class="box">X</div>
+            <div class="box" id="position-0"></div>
+            <div class="box" id="position-1"></div>
+            <div class="box" id="position-2"></div>
+            <div class="box" id="position-3"></div>
+            <div class="box" id="position-4"></div>
+            <div class="box" id="position-5"></div>
+            <div class="box" id="position-6"></div>
+            <div class="box" id="position-7"></div>
+            <div class="box" id="position-8"></div>
         </div> 
     </section>
     <script src="assets/js/script.js"></script>`;
@@ -60,43 +59,38 @@ let game_page_html = `
 let player_1 = "";
 let player_2 = "";
 
+//--------------------------------------------------------Functions-------------------
 function clickButtonX() {
-	console.log("button clicked!!!!!!")
 	player_1 = "X";
 	player_2 = "O";
 
-	document.getElementById("buttonx_choice").innerHTML = "<h3>Player 1</h3>"
-	document.getElementById("buttono_choice").innerHTML = "<h3>Player 2</h3>"
-
-
-	console.log(player_1);
-	console.log(player_2);
+	document.getElementById("buttonx_choice").innerHTML = "<h3>Player 1</h3>";
+	document.getElementById("buttono_choice").innerHTML = "<h3>Player 2</h3>";
 }
-
-//--------------------------------------------------------Functions--------------
 
 function clickButtonO() {
 	player_1 = "O";
 	player_2 = "X";
 
-	document.getElementById("buttonx_choice").innerHTML = "<h3>Player 2</h3>"
-	document.getElementById("buttono_choice").innerHTML = "<h3>Player 1</h3>"
-
-	console.log(player_1);
-	console.log(player_2);
+	document.getElementById("buttonx_choice").innerHTML = "<h3>Player 2</h3>";
+	document.getElementById("buttono_choice").innerHTML = "<h3>Player 1</h3>";
 }
 
 function generateGameHTML() {
-	document.body.innerHTML = game_page_html;
+	if(player_1 == "" && player_2 == "" ) {
+		window.alert("Please select an option first");
+	} else {
+			document.body.innerHTML = gamePageHTML;
+	}
 }
 
 
-//--------------------------------------------------------Event Listeners--------------
+//--------------------------------------------------------Event Listeners-------------
 let buttonX = document.getElementById("player-selection-X");
 buttonX.addEventListener('click', clickButtonX);
 
 let buttonO = document.getElementById("player-selection-O");
 buttonO.addEventListener('click', clickButtonO);
 
-let start_game = document.getElementById("start-game-button");
-start_game.addEventListener('click', generateGameHTML);
+let startGame = document.getElementById("start-game-button");
+startGame.addEventListener('click', generateGameHTML);
