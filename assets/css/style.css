@@ -88,6 +88,7 @@ body {
 
 #player-scores-div {
 	border-bottom: 15px solid black;
+	margin-bottom: 25px;
 }
 
 #player-scores-text {
@@ -103,12 +104,12 @@ body {
 /*----------------------------------------------------Board------------------------*/
 .game-board
 {
-	width: 600px;
-	height: 600px;
+	width: 250px;
+	height: 250px;
 	margin: 0 auto;
-  	background-color: #34495e;
+  	background-color: white;
 	color: #fff;
-	border: 6px solid #2c3e50;
+	border: 6px solid black;
 	border-radius: 10px;
 	
 	display: grid;
@@ -117,7 +118,7 @@ body {
 
 .box
 {
-	border: 6px solid #2c3e50;
+	border: 6px solid black;
 	border-radius: 2px;
 	font-family: Bangers;
 	font-weight: bold;
@@ -141,6 +142,12 @@ body {
 
 	#start-game-button {
 		font-size: 0.7rem;
+	}
+
+	.game-board
+	{
+	width: 300px;
+	height: 300px;
 	}	
 }
 
@@ -149,7 +156,7 @@ body {
 @media (min-width: 500px) {
 
 	#title {
-		font-size: 50px;
+		font-size: 40px;
 	}
 
 	#player-selection-text {
@@ -167,15 +174,19 @@ body {
 	#player-scores-text {
 		font-size: 1.2rem;
 	}		
+
+	.game-board
+	{
+	width: 400px;
+	height: 400px;
+	}
 }
-
-
 
 /*------------------------------Min-Width:  960px----------*/
 @media (min-width: 960px) {
 
 	#title {
-		font-size: 80px;
+		font-size: 60px;
 	}
 
 	#player-selection-text {
