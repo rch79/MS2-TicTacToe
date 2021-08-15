@@ -249,10 +249,22 @@ function isVictory() {
 	let victory = false;
 	let winner = ""
 
-	if(gameBoard[0] != " " && gameBoard[0] == gameBoard[1] && gameBoard[0] == gameBoard[2]) {
-		winner = gameBoard[0];
-		victory = true;
+	if ((gameBoard[0] != " " && gameBoard[0] == gameBoard[1] && gameBoard[0] == gameBoard[2]) ||
+		(gameBoard[3] != " " && gameBoard[3] == gameBoard[4] && gameBoard[3] == gameBoard[5]) ||
+		(gameBoard[6] != " " && gameBoard[6] == gameBoard[7] && gameBoard[6] == gameBoard[8]) ||
+		(gameBoard[0] != " " && gameBoard[0] == gameBoard[3] && gameBoard[0] == gameBoard[6]) ||
+		(gameBoard[1] != " " && gameBoard[1] == gameBoard[4] && gameBoard[1] == gameBoard[7]) ||
+		(gameBoard[2] != " " && gameBoard[2] == gameBoard[5] && gameBoard[2] == gameBoard[8]) ||
+		(gameBoard[0] != " " && gameBoard[0] == gameBoard[4] && gameBoard[0] == gameBoard[8]) ||
+		(gameBoard[2] != " " && gameBoard[2] == gameBoard[4] && gameBoard[2] == gameBoard[6])) {
+			winner = currentChoice;
+			victory = true;
 			
+	} else if (!gameBoard.includes(" ")) {
+		window.alert("Everybody loses");
+		victory = false;
+	} else {
+		return false;
 	}
 
 	if(victory) {
@@ -262,8 +274,6 @@ function isVictory() {
 			window.alert("Player 2 Wins!!!!");
 		}
 		return true;	
-	} else {
-		return false;
 	}
 }
 
