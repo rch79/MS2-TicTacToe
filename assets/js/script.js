@@ -35,8 +35,11 @@ let gamePageHTML = `
         </div>
     </header>
     <section id="player-scores-div">
-        <div id="player-scores-text">
-            <h2>Scores</h2>
+        <div id="player1-score">
+            <h2>Player 1 - Score: 0</h2>
+        </div>
+        <div id ="player2-score">
+        	<h2>Player 2 - Score: 0</h2>
         </div>
     </section>
     <section id="board-grid">
@@ -62,6 +65,11 @@ let currentChoice = "";
 let gameBoard = [" "," "," "," "," "," "," "," "," "];
 
 //--------------------------------------------------------Functions-------------------
+
+function alertMessage(index, message) {
+	document.getElementsByClassName("alert-message")[index].innerHTML = "<h3>" + message + "</h3>";
+	setTimeout(() => { document.getElementsByClassName("alert-message")[index].innerHTML = ""; }, 700);
+}
 function clickButtonX() {
 	player1Choice = "X";
 	player2Choice = "O";
@@ -92,7 +100,7 @@ function setCurrentChoice() {
 	
 function startGame() {
 	if(player1Choice == "" && player2Choice == "" ) {
-		window.alert("Please select an option first");
+		alertMessage(0,"Please select an option first!!!");
 	} else {
 			document.body.innerHTML = gamePageHTML;
 			
