@@ -67,7 +67,9 @@ function clickButtonX() {
 	player2Choice = "O";
 
 	document.getElementById("buttonx_choice").innerHTML = "<h3>Player 1</h3>";
+	document.getElementById("player-selection-button-x").style.backgroundColor = "green";
 	document.getElementById("buttono_choice").innerHTML = "<h3>Player 2</h3>";
+	document.getElementById("player-selection-button-o").style.backgroundColor = "white";
 }
 
 function clickButtonO() {
@@ -75,7 +77,9 @@ function clickButtonO() {
 	player2Choice = "X";
 
 	document.getElementById("buttonx_choice").innerHTML = "<h3>Player 2</h3>";
+	document.getElementById("player-selection-button-x").style.backgroundColor = "white";
 	document.getElementById("buttono_choice").innerHTML = "<h3>Player 1</h3>";
+	document.getElementById("player-selection-button-o").style.backgroundColor = "green";
 }
 
 function setCurrentChoice() {
