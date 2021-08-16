@@ -278,10 +278,10 @@ function isVictory() {
 }
 
 //--------------------------------------------------------Event Handlers-------------
-let handleClickButtonX = document.getElementById("player-selection-X");
+let handleClickButtonX = document.getElementById("player-selection-button-x");
 handleClickButtonX.addEventListener('click', clickButtonX);
 
-let handleClickButtonO = document.getElementById("player-selection-O");
+let handleClickButtonO = document.getElementById("player-selection-button-o");
 handleClickButtonO.addEventListener('click', clickButtonO);
 
 let handleStartGame = document.getElementById("start-game-button");
