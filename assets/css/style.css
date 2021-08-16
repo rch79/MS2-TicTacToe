@@ -97,7 +97,7 @@ body {
 	margin: auto;
 	border: 10px solid black;
 	text-align: center;
-	margin-top: 300px;
+	margin-top: 200px;
 	border-radius: 25px;
 	height: 100px;
 	line-height: 100px;
@@ -246,6 +246,10 @@ body {
 
 	#buttono_choice {
 	margin-right: 20%;	
+	}
+
+	#start-game-button {
+	margin-top: 250px;
 	}
 }
 
