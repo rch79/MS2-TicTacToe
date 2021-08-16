@@ -11,6 +11,16 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
+.alert-message {
+	clear:  both;
+	height: 35px;
+	color: red;
+	font-family: 'Bangers', cursive;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+}
+
 /*--------------------------------------------------------Main Title-------------*/
 #title, #subtitle {
 	font-family: 'Bangers', cursive;
@@ -41,7 +51,7 @@ body {
 	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	margin-bottom: 35px;
+	margin-bottom: 10px;
 }
 
 .player-selection-buttons {
@@ -52,25 +62,19 @@ body {
 	line-height: 100px;
 	border-radius: 25px;
 	margin: 0 auto;
-}
-
-.player-selection-buttons > h3 {
+	margin-top: 15px;
 	font-size: 4em;
 	font-weight: 800;
 }
-
 
 #player-selection-button-x {
 	float: left;
 	margin-left: 10%;
 }
 
-
-
 #player-selection-button-o {
 	float: right;
 	margin-right: 10%;
-
 }
 
 .post-selection-button-text {
@@ -83,7 +87,6 @@ body {
 }
 
 #buttonx_choice, #buttono_choice {
-	/*font-family: 'Bangers', cursive;*/
 	font-size: 1.2rem;
 	letter-spacing: 2px;
 }
@@ -120,9 +123,7 @@ body {
 /*----------------------------------------------------Player Scores------------------------*/
 
 
-#player-scores-div {
-	border-bottom: 15px solid black;
-	margin-bottom: 25px;
+#player-scores {
 }
 
 #player-scores-text {
@@ -133,6 +134,21 @@ body {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	margin-bottom: 35px;
+}
+
+#player1-score, #player2-score {
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+	border-bottom: 15px solid black;
+	margin-bottom: 25px;
+}
+#player1-score {
+	float: left;
+}
+
+#player2-score {
+	float: right;
 }
 
 /*----------------------------------------------------Board------------------------*/
