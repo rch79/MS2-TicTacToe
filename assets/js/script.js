@@ -36,10 +36,10 @@ let gamePageHTML = `
     </header>
     <section id="player-scores">
         <div id="player1-score">
-            <h2>Player 1 - Score: 0</h2>
+            <h2>Player 1 Score: 0</h2>
         </div>
         <div id ="player2-score">
-        	<h2>Player 2 - Score: 0</h2>
+        	<h2>Player 2 Score: 0</h2>
         </div>
     </section>
     <section>
@@ -83,8 +83,8 @@ function alertMessage(message, duration) {
 }
 
 function setPlayerScores() {
-	document.getElementById("player1-score").innerHTML = "<h2>Player 1 - Score: " + player1Score + "</h2>";
-	document.getElementById("player2-score").innerHTML = "<h2>Player 2 - Score: " + player2Score + "</h2>";
+	document.getElementById("player1-score").innerHTML = "<h2>Player 1 Score: " + player1Score + "</h2>";
+	document.getElementById("player2-score").innerHTML = "<h2>Player 2 Score: " + player2Score + "</h2>";
 }
 
 function highlightWinningPositions(winningPositions) {
@@ -129,9 +129,9 @@ function setCurrentChoice() {
 
 function showActivePlayer() {
 	if (player1Choice === currentChoice) {
-		document.getElementById("current-player").innerHTML = "Current Player: Player 1 (" + player1Choice + ")";	
+		document.getElementById("current-player").innerHTML = "Player 1 Go! (" + player1Choice + ")";	
 	} else {
-		document.getElementById("current-player").innerHTML = "Current Player: Player 2 (" + player2Choice + ")";
+		document.getElementById("current-player").innerHTML = "Player 2 Go! (" + player2Choice + ")";
 	}
 	
 }
