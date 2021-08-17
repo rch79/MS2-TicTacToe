@@ -104,7 +104,7 @@ function clickButtonO() {
 }
 
 function setCurrentChoice() {
-	if(currentChoice == "X") {
+	if(currentChoice === "X") {
 		currentChoice = "O";
 	} else {
 		currentChoice = "X";
@@ -112,7 +112,7 @@ function setCurrentChoice() {
 }
 	
 function startGame() {
-	if(player1Choice == "" && player2Choice == "" ) {
+	if(player1Choice === "" && player2Choice === "" ) {
 		alertMessage("Please select an option first!!!", 700);
 	} else {
 			roundEnded = false;
@@ -132,7 +132,7 @@ function getBoardValues() {
 
 function playerTurn0() {
 	if (!roundEnded) {
-		if (document.getElementById("position-0").innerHTML != " ") {
+		if (document.getElementById("position-0").innerHTML !== " ") {
 			alertMessage("Invalid Selection!!!", 700);
 		} else {
 			document.getElementById("position-0").innerHTML = currentChoice;
@@ -145,7 +145,7 @@ function playerTurn0() {
 
 function playerTurn1() {
 	if (!roundEnded) {
-		if (document.getElementById("position-1").innerHTML != " ") {
+		if (document.getElementById("position-1").innerHTML !== " ") {
 			alertMessage("Invalid Selection!!!", 700);
 		} else {
 			document.getElementById("position-1").innerHTML = currentChoice;
@@ -158,7 +158,7 @@ function playerTurn1() {
 
 function playerTurn2() {
 	if (!roundEnded) {
-		if (document.getElementById("position-2").innerHTML != " ") {
+		if (document.getElementById("position-2").innerHTML !== " ") {
 			alertMessage("Invalid Selection!!!", 700);
 		} else {
 			document.getElementById("position-2").innerHTML = currentChoice;
@@ -171,7 +171,7 @@ function playerTurn2() {
 
 function playerTurn3() {
 	if (!roundEnded) {
-		if (document.getElementById("position-3").innerHTML != " ") {
+		if (document.getElementById("position-3").innerHTML !== " ") {
 			alertMessage("Invalid Selection!!!", 700);
 		} else {
 			document.getElementById("position-3").innerHTML = currentChoice;
@@ -184,7 +184,7 @@ function playerTurn3() {
 
 function playerTurn4() {
 	if (!roundEnded) {
-		if (document.getElementById("position-4").innerHTML != " ") {
+		if (document.getElementById("position-4").innerHTML !== " ") {
 			alertMessage("Invalid Selection!!!", 700);
 		} else {
 			document.getElementById("position-4").innerHTML = currentChoice;
@@ -198,7 +198,7 @@ function playerTurn4() {
 
 function playerTurn5() {
 	if (!roundEnded) {
-		if (document.getElementById("position-5").innerHTML != " ") {
+		if (document.getElementById("position-5").innerHTML !== " ") {
 			alertMessage("Invalid Selection!!!", 700);
 		} else {
 			document.getElementById("position-5").innerHTML = currentChoice;
@@ -212,7 +212,7 @@ function playerTurn5() {
 
 function playerTurn6() {
 	if (!roundEnded) {
-		if (document.getElementById("position-6").innerHTML != " ") {
+		if (document.getElementById("position-6").innerHTML !== " ") {
 			alertMessage("Invalid Selection!!!", 700);
 		} else {
 			document.getElementById("position-6").innerHTML = currentChoice;
@@ -225,7 +225,7 @@ function playerTurn6() {
 
 function playerTurn7() {
 	if (!roundEnded) {
-		if (document.getElementById("position-7").innerHTML != " ") {
+		if (document.getElementById("position-7").innerHTML !== " ") {
 			alertMessage("Invalid Selection!!!", 700);
 		} else {
 			document.getElementById("position-7").innerHTML = currentChoice;
@@ -239,7 +239,7 @@ function playerTurn7() {
 
 function playerTurn8() {
 	if (!roundEnded) {
-		if (document.getElementById("position-8").innerHTML != " ") {
+		if (document.getElementById("position-8").innerHTML !== " ") {
 			alertMessage("Invalid Selection!!!", 700);
 		} else {
 			document.getElementById("position-8").innerHTML = currentChoice;
