@@ -69,18 +69,20 @@ let currentChoice = "";
 let gameBoard = [" "," "," "," "," "," "," "," "," "];
 let player1Score = 0;
 let player2Score = 0;
+let roundEnded = false;
 
 //---------------------------------------------------------------------------------------------------Functions-------------------
 
-function alertMessage(message) {
+function alertMessage(message, duration) {
 	document.getElementsByClassName("alert-message")[0].innerHTML = "<h3>" + message + "</h3>";
-	setTimeout(() => { document.getElementsByClassName("alert-message")[0].innerHTML = ""; }, 700);
+	setTimeout(() => { document.getElementsByClassName("alert-message")[0].innerHTML = ""; }, duration);
 }
 
 function setPlayerScores() {
-	document.getElementById("player1-score").innerHTML = "<h2>Player 1- Score: " + player1Score + "</h2>";
-	document.getElementById("player2-score").innerHTML = "<h2>Player 2- Score: " + player2Score + "</h2>";
+	document.getElementById("player1-score").innerHTML = "<h2>Player 1 - Score: " + player1Score + "</h2>";
+	document.getElementById("player2-score").innerHTML = "<h2>Player 2 - Score: " + player2Score + "</h2>";
 }
+
 function clickButtonX() {
 	player1Choice = "X";
 	player2Choice = "O";
@@ -111,8 +113,9 @@ function setCurrentChoice() {
 	
 function startGame() {
 	if(player1Choice == "" && player2Choice == "" ) {
-		alertMessage("Please select an option first!!!");
+		alertMessage("Please select an option first!!!", 700);
 	} else {
+			roundEnded = false;
 			document.body.innerHTML = gamePageHTML;
 			currentChoice = player1Choice;
 			setPlayerScores();
@@ -128,87 +131,127 @@ function getBoardValues() {
 }
 
 function playerTurn0() {
-	if (document.getElementById("position-0").innerHTML != " ") {
-		alertMessage("Invalid Selection!!!");
-	} else {
-		document.getElementById("position-0").innerHTML = currentChoice;
-		isVictory();
+	if (!roundEnded) {
+		if (document.getElementById("position-0").innerHTML != " ") {
+			alertMessage("Invalid Selection!!!", 700);
+		} else {
+			document.getElementById("position-0").innerHTML = currentChoice;
+			if (isEndRound() === false) {
+				setCurrentChoice();
+			}
+		}
 	}
-}
+}	
 
 function playerTurn1() {
-	if (document.getElementById("position-1").innerHTML != " ") {
-		alertMessage("Invalid Selection!!!");
-	} else {
-		document.getElementById("position-1").innerHTML = currentChoice;
-		isVictory();
+	if (!roundEnded) {
+		if (document.getElementById("position-1").innerHTML != " ") {
+			alertMessage("Invalid Selection!!!", 700);
+		} else {
+			document.getElementById("position-1").innerHTML = currentChoice;
+			if (isEndRound() === false) {
+				setCurrentChoice();
+			}
+		}
 	}
-}
+}	
 
 function playerTurn2() {
-	if (document.getElementById("position-2").innerHTML != " ") {
-		alertMessage("Invalid Selection!!!");
-	} else {
-		document.getElementById("position-2").innerHTML = currentChoice;
-		isVictory();
+	if (!roundEnded) {
+		if (document.getElementById("position-2").innerHTML != " ") {
+			alertMessage("Invalid Selection!!!", 700);
+		} else {
+			document.getElementById("position-2").innerHTML = currentChoice;
+			if (isEndRound() === false) {
+				setCurrentChoice();
+			}
+		}
 	}
-}
+}	
 
 function playerTurn3() {
-	if (document.getElementById("position-3").innerHTML != " ") {
-		alertMessage("Invalid Selection!!!");
-	} else {
-		document.getElementById("position-3").innerHTML = currentChoice;
-		isVictory();
+	if (!roundEnded) {
+		if (document.getElementById("position-3").innerHTML != " ") {
+			alertMessage("Invalid Selection!!!", 700);
+		} else {
+			document.getElementById("position-3").innerHTML = currentChoice;
+			if (isEndRound() === false) {
+				setCurrentChoice();
+			}
+		}
 	}
-}
+}	
 
 function playerTurn4() {
-	if (document.getElementById("position-4").innerHTML != " ") {
-		alertMessage("Invalid Selection!!!");
-	} else {
-		document.getElementById("position-4").innerHTML = currentChoice;
-		isVictory();
+	if (!roundEnded) {
+		if (document.getElementById("position-4").innerHTML != " ") {
+			alertMessage("Invalid Selection!!!", 700);
+		} else {
+			document.getElementById("position-4").innerHTML = currentChoice;
+			if (isEndRound() === false) {
+				setCurrentChoice();
+			}
+		}
 	}
-}
+}	
+
 
 function playerTurn5() {
-	if (document.getElementById("position-5").innerHTML != " ") {
-		alertMessage("Invalid Selection!!!");
-	} else {
-		document.getElementById("position-5").innerHTML = currentChoice;
-		isVictory();
+	if (!roundEnded) {
+		if (document.getElementById("position-5").innerHTML != " ") {
+			alertMessage("Invalid Selection!!!", 700);
+		} else {
+			document.getElementById("position-5").innerHTML = currentChoice;
+			if (isEndRound() === false) {
+				setCurrentChoice();
+			}
+		}
 	}
-}
+}	
+
 
 function playerTurn6() {
-	if (document.getElementById("position-6").innerHTML != " ") {
-		alertMessage("Invalid Selection!!!");
-	} else {
-		document.getElementById("position-6").innerHTML = currentChoice;
-		isVictory();
+	if (!roundEnded) {
+		if (document.getElementById("position-6").innerHTML != " ") {
+			alertMessage("Invalid Selection!!!", 700);
+		} else {
+			document.getElementById("position-6").innerHTML = currentChoice;
+			if (isEndRound() === false) {
+				setCurrentChoice();
+			}
+		}
 	}
-}
+}	
 
 function playerTurn7() {
-	if (document.getElementById("position-7").innerHTML != " ") {
-		alertMessage("Invalid Selection!!!");
-	} else {
-		document.getElementById("position-7").innerHTML = currentChoice;
-		isVictory();
+	if (!roundEnded) {
+		if (document.getElementById("position-7").innerHTML != " ") {
+			alertMessage("Invalid Selection!!!", 700);
+		} else {
+			document.getElementById("position-7").innerHTML = currentChoice;
+			if (isEndRound() === false) {
+				setCurrentChoice();
+			}
+		}
 	}
-}
+}	
+
 
 function playerTurn8() {
-	if (document.getElementById("position-8").innerHTML != " ") {
-		alertMessage("Invalid Selection!!!");
-	} else {
-		document.getElementById("position-8").innerHTML = currentChoice;
-		isVictory();
+	if (!roundEnded) {
+		if (document.getElementById("position-8").innerHTML != " ") {
+			alertMessage("Invalid Selection!!!", 700);
+		} else {
+			document.getElementById("position-8").innerHTML = currentChoice;
+			if (isEndRound() === false) {
+				setCurrentChoice();
+			}
+		}
 	}
-}
+}	
 
 
+//Initializes event handlers for the main board positions after they've loaded
 function initializeBoardHandlers() {
 	let handleBoardClick0 = document.getElementById("position-0");
 	handleBoardClick0.addEventListener('click', playerTurn0);
@@ -238,41 +281,38 @@ function initializeBoardHandlers() {
 	handleBoardClick8.addEventListener('click', playerTurn8);
 }
 
-function isVictory() {
+function isEndRound() {
 	getBoardValues();
-	let victory = false;
 	let winner = ""
 
-	if ((gameBoard[0] != " " && gameBoard[0] == gameBoard[1] && gameBoard[0] == gameBoard[2]) ||
-		(gameBoard[3] != " " && gameBoard[3] == gameBoard[4] && gameBoard[3] == gameBoard[5]) ||
-		(gameBoard[6] != " " && gameBoard[6] == gameBoard[7] && gameBoard[6] == gameBoard[8]) ||
-		(gameBoard[0] != " " && gameBoard[0] == gameBoard[3] && gameBoard[0] == gameBoard[6]) ||
-		(gameBoard[1] != " " && gameBoard[1] == gameBoard[4] && gameBoard[1] == gameBoard[7]) ||
-		(gameBoard[2] != " " && gameBoard[2] == gameBoard[5] && gameBoard[2] == gameBoard[8]) ||
-		(gameBoard[0] != " " && gameBoard[0] == gameBoard[4] && gameBoard[0] == gameBoard[8]) ||
-		(gameBoard[2] != " " && gameBoard[2] == gameBoard[4] && gameBoard[2] == gameBoard[6])) {
+	if ((gameBoard[0] !== " " && gameBoard[0] === gameBoard[1] && gameBoard[0] === gameBoard[2]) ||
+		(gameBoard[3] !== " " && gameBoard[3] === gameBoard[4] && gameBoard[3] === gameBoard[5]) ||
+		(gameBoard[6] !== " " && gameBoard[6] === gameBoard[7] && gameBoard[6] === gameBoard[8]) ||
+		(gameBoard[0] !== " " && gameBoard[0] === gameBoard[3] && gameBoard[0] === gameBoard[6]) ||
+		(gameBoard[1] !== " " && gameBoard[1] === gameBoard[4] && gameBoard[1] === gameBoard[7]) ||
+		(gameBoard[2] !== " " && gameBoard[2] === gameBoard[5] && gameBoard[2] === gameBoard[8]) ||
+		(gameBoard[0] !== " " && gameBoard[0] === gameBoard[4] && gameBoard[0] === gameBoard[8]) ||
+		(gameBoard[2] !== " " && gameBoard[2] === gameBoard[4] && gameBoard[2] === gameBoard[6])) {
 			winner = currentChoice;
-			victory = true;
-			
-	} else if (!gameBoard.includes(" ")) {
-		window.alert("Everybody loses");
-		victory = false;
-	} else {
-		setCurrentChoice();
+			if(player1Choice === winner) {
+					roundEnded = true;
+					alertMessage("Player 1 Wins!!!", 3000);
+					player1Score += 1;
+					setTimeout(startGame, 3000);
+				} else {
+					roundEnded = true;
+					alertMessage("Player 2 Wins!!!!", 3000);
+					player2Score += 1;
+					setTimeout(startGame, 3000);
+				}
+			return true;				
+	} else if (gameBoard.includes(" ") === false) {
+		roundEnded = true;
+		alertMessage("Everybody loses!!!", 3000);
+		setTimeout(startGame, 3000);
 		return false;
-	}
-
-	if(victory) {
-		if(player1Choice == winner) {
-			alertMessage("Player 1 Wins!!!");
-			player1Score += 1;
-			startGame();
-		} else {
-			alertMessage("Player 2 Wins!!!!");
-			player2Score += 1;
-			startGame();
-		}
-		return true;	
+	} else {
+		return false;
 	}
 }
 
