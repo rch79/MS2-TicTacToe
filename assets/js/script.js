@@ -83,6 +83,17 @@ function setPlayerScores() {
 	document.getElementById("player2-score").innerHTML = "<h2>Player 2 - Score: " + player2Score + "</h2>";
 }
 
+function highlightWinningPositions(winningPositions) {
+	for (let i = 0; i < winningPositions.length; i++) {
+		winningPosition = "position-" + winningPositions[i];
+		if (winningPositions.length == 3) {
+			document.getElementById(winningPosition).style.backgroundColor = "green";
+		} else {
+			document.getElementById(winningPosition).style.backgroundColor = "yellow";
+		}
+	}
+}
+
 function clickButtonX() {
 	player1Choice = "X";
 	player2Choice = "O";
@@ -283,34 +294,60 @@ function initializeBoardHandlers() {
 
 function isEndRound() {
 	getBoardValues();
-	let winner = ""
+	winner = ""
 
-	if ((gameBoard[0] !== " " && gameBoard[0] === gameBoard[1] && gameBoard[0] === gameBoard[2]) ||
-		(gameBoard[3] !== " " && gameBoard[3] === gameBoard[4] && gameBoard[3] === gameBoard[5]) ||
-		(gameBoard[6] !== " " && gameBoard[6] === gameBoard[7] && gameBoard[6] === gameBoard[8]) ||
-		(gameBoard[0] !== " " && gameBoard[0] === gameBoard[3] && gameBoard[0] === gameBoard[6]) ||
-		(gameBoard[1] !== " " && gameBoard[1] === gameBoard[4] && gameBoard[1] === gameBoard[7]) ||
-		(gameBoard[2] !== " " && gameBoard[2] === gameBoard[5] && gameBoard[2] === gameBoard[8]) ||
-		(gameBoard[0] !== " " && gameBoard[0] === gameBoard[4] && gameBoard[0] === gameBoard[8]) ||
-		(gameBoard[2] !== " " && gameBoard[2] === gameBoard[4] && gameBoard[2] === gameBoard[6])) {
-			winner = currentChoice;
-			if(player1Choice === winner) {
-					roundEnded = true;
-					alertMessage("Player 1 Wins!!!", 3000);
-					player1Score += 1;
-					setTimeout(startGame, 3000);
-				} else {
-					roundEnded = true;
-					alertMessage("Player 2 Wins!!!!", 3000);
-					player2Score += 1;
-					setTimeout(startGame, 3000);
-				}
-			return true;				
-	} else if (gameBoard.includes(" ") === false) {
+	if (gameBoard[0] !== " " && gameBoard[0] === gameBoard[1] && gameBoard[0] === gameBoard[2]) {
+		highlightWinningPositions([0, 1, 2]);
 		roundEnded = true;
-		alertMessage("Everybody loses!!!", 3000);
-		setTimeout(startGame, 3000);
-		return false;
+		winner = currentChoice;
+	} else if (gameBoard[3] !== " " && gameBoard[3] === gameBoard[4] && gameBoard[3] === gameBoard[5]) {
+		highlightWinningPositions([3, 4, 5]);
+		roundEnded = true;
+		winner = currentChoice;
+	} else if (gameBoard[6] !== " " && gameBoard[6] === gameBoard[7] && gameBoard[6] === gameBoard[8]) {
+		highlightWinningPositions([6, 7, 8]);
+		roundEnded = true;
+		winner = currentChoice;
+	} else if (gameBoard[0] !== " " && gameBoard[0] === gameBoard[3] && gameBoard[0] === gameBoard[6]) {
+		highlightWinningPositions([0, 3, 6]);
+		roundEnded = true;
+		winner = currentChoice;
+	} else if (gameBoard[1] !== " " && gameBoard[1] === gameBoard[4] && gameBoard[1] === gameBoard[7]) {
+		highlightWinningPositions([1, 4, 7]);
+		roundEnded = true;
+		winner = currentChoice;
+	} else if (gameBoard[2] !== " " && gameBoard[2] === gameBoard[5] && gameBoard[2] === gameBoard[8]) {
+		highlightWinningPositions([2, 5, 8]);
+		roundEnded = true;
+		winner = currentChoice;
+	} else if (gameBoard[0] !== " " && gameBoard[0] === gameBoard[4] && gameBoard[0] === gameBoard[8]) {
+		highlightWinningPositions([0, 4, 8]);
+		roundEnded = true;
+		winner = currentChoice;
+	} else if (gameBoard[2] !== " " && gameBoard[2] === gameBoard[4] && gameBoard[2] === gameBoard[6]) {
+		highlightWinningPositions([2, 4, 6]);
+		roundEnded = true;
+		winner = currentChoice;
+	} else if (!gameBoard.includes(" ")) {
+		highlightWinningPositions([0, 1, 2, 3, 4, 5, 6, 7, 8]);
+		roundEnded = true;
+		winnner = "XO"
+	}
+
+	if (roundEnded === true) {
+		if (player1Choice === winner) {
+			alertMessage("Player 1 Wins!!!", 3000);
+			player1Score += 1;
+			setTimeout(startGame, 3000);
+		} else if (player2Choice === winner) {
+			alertMessage("Player 2 Wins!!!", 3000);
+			player2Score += 1;
+			setTimeout(startGame, 3000);			
+		} else {				
+			alertMessage("Everybody loses!!!", 3000);
+			setTimeout(startGame, 3000);
+		}
+		return true;
 	} else {
 		return false;
 	}
