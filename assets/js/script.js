@@ -43,6 +43,10 @@ let gamePageHTML = `
         </div>
     </section>
     <section>
+        	<div id="current-player">
+    		<h3></h3>
+    	</div>
+ 
     	<div class="alert-message">
         	<h3></h3>
         </div>        
@@ -120,6 +124,16 @@ function setCurrentChoice() {
 	} else {
 		currentChoice = "X";
 	}
+	showActivePlayer();
+}
+
+function showActivePlayer() {
+	if (player1Choice === currentChoice) {
+		document.getElementById("current-player").innerHTML = "Current Player: Player 1 (" + player1Choice + ")";	
+	} else {
+		document.getElementById("current-player").innerHTML = "Current Player: Player 2 (" + player2Choice + ")";
+	}
+	
 }
 	
 function startGame() {
@@ -129,6 +143,7 @@ function startGame() {
 			roundEnded = false;
 			document.body.innerHTML = gamePageHTML;
 			currentChoice = player1Choice;
+			showActivePlayer();
 			setPlayerScores();
 			initializeBoardHandlers();
 	}
