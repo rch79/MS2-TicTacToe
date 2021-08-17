@@ -22,6 +22,17 @@ body {
 	letter-spacing: 2px;
 }
 
+#current-player {
+	clear:  both;
+	height: 35px;
+	color: black;
+	font-family: 'Bangers', cursive;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	letter-spacing: 2px;
+
+}
 /*--------------------------------------------------------Main Title-------------*/
 #title, #subtitle {
 	font-family: 'Bangers', cursive;
