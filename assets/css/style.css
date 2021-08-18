@@ -6,36 +6,31 @@
     border: none;
 }
 
-
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Bangers', cursive;
+}
+
+/*----------------------------------------------------Player alert messages and score text */
+.alert-message, #current-player {
+	clear: both;
+	height: 35px;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 2px;
 }
 
 .alert-message {
-	clear:  both;
-	height: 35px;
 	color: red;
-	font-family: 'Bangers', cursive;
-	text-align: center;
-	text-transform: uppercase;
 	font-size: 1.2rem;
-	letter-spacing: 2px;
 }
 
 #current-player {
-	clear:  both;
-	height: 35px;
 	color: black;
-	font-family: 'Bangers', cursive;
-	text-align: center;
-	text-transform: uppercase;
 	font-size: 1.4rem;
-	letter-spacing: 2px;
-
 }
+
 /*--------------------------------------------------------Main Title-------------*/
 #title, #subtitle {
-	font-family: 'Bangers', cursive;
 	font-weight: 400;
 	font-size: 25px;
 	font-style: bold;
@@ -52,15 +47,14 @@ body {
 
 /*----------------------------------------------------Player Selection-------------*/
 #player-selection {
-	font-family: 'Bangers', cursive;
 	letter-spacing: 2px;
+	text-align: center;
 }
 
 #player-selection-text {
 	height: 30px;
 	width: 100%;
 	font-size: .65rem;
-	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	margin-bottom: 10px;
@@ -68,7 +62,6 @@ body {
 
 .player-selection-buttons {
 	width: 25%;
-	text-align: center;
 	border: 10px solid black;
 	height:	100px;
 	line-height: 100px;
@@ -92,7 +85,6 @@ body {
 .post-selection-button-text {
 	width: 25%;
 	border: 10px;
-	text-align: center;
 	font-size: 0.6rem;
 	margin: 0 auto;
 	padding-top: 15px;
@@ -114,9 +106,7 @@ body {
 }
 
 /*----------------------------------------------------Start Game------------------------*/
-
 #start-game-button {
-	font-family: 'Bangers', cursive;
 	letter-spacing: 4px;
 	clear: top;
 	width: 40%;
@@ -133,10 +123,12 @@ body {
 #start-game-button:hover {
 	background-color: lightpink;
 }
-/*----------------------------------------------------Player Scores------------------------*/
 
+/*----------------------------------------------------Player Scores------------------------*/
+/*applies to game page HTML, which is generated via JavaScript */
 
 #player-scores {
+	font-family: 'Montserrat', sans-serif;
 	font-size: 0.8rem;
 }
 
@@ -147,6 +139,7 @@ body {
 	border-bottom: 15px solid black;
 	margin-bottom: 25px;
 }
+
 #player1-score {
 	float: left;
 }
@@ -156,8 +149,8 @@ body {
 }
 
 /*----------------------------------------------------Board------------------------*/
-.game-board
-{
+/*applies to game page HTML, which is generated via JavaScript */
+.game-board {
 	width: 250px;
 	height: 250px;
 	margin: 0 auto;
@@ -165,7 +158,6 @@ body {
 	color: black;
 	border: 6px solid black;
 	border-radius: 10px;
-	
 	display: grid;
 	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
 }
@@ -174,7 +166,6 @@ body {
 {
 	border: 6px solid black;
 	border-radius: 2px;
-	font-family: Bangers;
 	font-weight: bold;
 	font-size: 4em;
 	display: flex;
@@ -202,12 +193,12 @@ body {
 		font-size: 1rem;
 	}
 
-	.game-board
-	{
-	width: 300px;
-	height: 300px;
+	.game-board {
+		width: 300px;
+		height: 300px;
 	}	
 }
+
 /*------------------------------Min-Width:  400px----------*/
 @media (min-width: 400px) {
 
@@ -243,10 +234,9 @@ body {
 		font-size: 1rem;
 	}		
 
-	.game-board
-	{
-	width: 400px;
-	height: 400px;
+	.game-board {
+		width: 400px;
+		height: 400px;
 	}
 }
 
@@ -254,8 +244,8 @@ body {
 @media (min-width: 5800px) {
 
 	#player-scores {
-			font-size: 1.2rem;
-		}		
+		font-size: 1.2rem;
+	}		
 }
 
 /*------------------------------Min-Width:  960px----------*/
@@ -274,24 +264,23 @@ body {
 	}
 
 	#player-selection-button-x {
-	margin-left: 20%;
+		margin-left: 20%;
 	}
 
 	#player-selection-button-o {
-	margin-right: 20%;
+		margin-right: 20%;
 	}
 
 	#buttonx_choice {
-	margin-left: 20%;	
+		margin-left: 20%;	
 	}
 
 	#buttono_choice {
-	margin-right: 20%;	
+		margin-right: 20%;	
 	}
 
 	#start-game-button {
-	margin-top: 250px;
-/*	font-size: 1.5rem;*/
+		margin-top: 250px;
 	}
 }
 
