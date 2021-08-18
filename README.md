@@ -10,11 +10,9 @@ This is a simple 2-player (local) Tic-Tac-Toe game. The users select whether pla
 - __Start page__
 
   - The page where the players make their selection prior to the start of the game. There are two interactive features on this page:
-    - The 'X' and the 'O' buttons: Player 1 makes the selection by clicking on either the 'X' or the 'O' button. The remaining choice is automatically assigned to player 2
-  - The Start Game button:
-    - The game starts this button is clicked, provided that the users have made their selection. The user will be notified if no selection is made.
+    - **The 'X' and the 'O' buttons:** Player 1 makes the selection by clicking on either the 'X' or the 'O' button. The remaining choice is automatically assigned to player 2
+    - **The Start Game button:** The game starts this button is clicked, provided that the users have made their selection. The user will be notified if no selection is made.
 
-![Nav Bar](https://github.com/rch79/MS1-Finance-Office/blob/master/assets/images/readme/navigation-bar.PNG)
 
 - __The Game Page__
 
