@@ -130,6 +130,9 @@ body {
 	font-size: 0.9rem;
 }
 
+#start-game-button:hover {
+	background-color: lightpink;
+}
 /*----------------------------------------------------Player Scores------------------------*/
 
 
