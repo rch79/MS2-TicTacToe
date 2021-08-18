@@ -63,18 +63,19 @@ At first players were able to keep filling additional boxes between the end of a
 
 - JavaScript
  - No errors were found when running the script through [JSHint](https://jshint.com/):
+
    <img src="https://github.com/rch79/MS2-TicTacToe/blob/main/assets/images/jshint_results.PNG">
 
 ### Lighthouse Reports:
 
  - __Mobile:__
 
-<img src="https://github.com/rch79/MS2-TicTacToe/blob/main/assets/images/lighthouse_report_mobile.PNG" width="400" height="400">
+<img src="https://github.com/rch79/MS2-TicTacToe/blob/main/assets/images/lighthouse_report_mobile.PNG">
 
 
  - __Desktop:__
 
-<img src="https://github.com/rch79/MS2-TicTacToe/blob/main/assets/images/lighthouse_report_desktop.PNG" width="400" height="400">
+<img src="https://github.com/rch79/MS2-TicTacToe/blob/main/assets/images/lighthouse_report_desktop.PNG">
 
 
 
