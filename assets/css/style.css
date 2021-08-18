@@ -33,7 +33,6 @@ body {
 #title, #subtitle {
 	font-weight: 400;
 	font-size: 25px;
-	font-style: bold;
 	text-align: center;
 	letter-spacing: 4px;
 	text-transform: uppercase;	
@@ -182,7 +181,7 @@ body {
 	}
 
 	#subtitle {
-		font-size: 11.7;
+		font-size: 11.7px;
 	}
 
 	.post-selection-button-text {
@@ -215,7 +214,7 @@ body {
 	}
 
 	#subtitle {
-		font-size: 15.6;
+		font-size: 15.6px;
 	}
 
 	#player-selection-text {
