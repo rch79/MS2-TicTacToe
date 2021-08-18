@@ -1,6 +1,6 @@
 # Tic-Tac-Toe
 
-This is a simple 2-player (local) Tic-Tac-Toe game. The users select whether player 1 will be using 'X'  or 'O' on the main page. The remaining shape is assigned automatically to player 2. At the end of each round the winner gets a point. No points are assigned if the round ends in a tie. The game continues ad infinitum until players are tiredd. 
+This is a simple 2-player (local) Tic-Tac-Toe game. The users select whether player 1 will be using 'X'  or 'O' on the main page. The remaining shape is assigned automatically to player 2. At the end of each round the winner gets a point. No points are assigned if the round ends in a tie. The game continues ad infinitum. 
 
 ![Responsive Mockup](https://github.com/rch79/MS1-Finance-Office/blob/master/assets/images/readme/responsive-site-mockup.PNG)
 
@@ -9,60 +9,31 @@ This is a simple 2-player (local) Tic-Tac-Toe game. The users select whether pla
 
 - __Start page__
 
-  - Featured at the top of all pages, includes links to the logo (home page), home, staff and contact pages
-  - The navigation bar enables site users to visit all pages within the site without having to use the back button in their broser.
+  - The page where the players make their selection prior to the start of the game. There are two interactive features on this page:
+    - The 'X' and the 'O' buttons: Player 1 makes the selection by clicking on either the 'X' or the 'O' button. The remaining choice is automatically assigned to player 2
+  - The Start Game button:
+    - The game starts this button is clicked, provided that the users have made their selection. The user will be notified if no selection is made.
 
 ![Nav Bar](https://github.com/rch79/MS1-Finance-Office/blob/master/assets/images/readme/navigation-bar.PNG)
 
-- __The landing page image__
+- __The Game Page__
 
-  - The landing includes a photograph of the building in which the Finance Office is located to provide potential walk-in customers with a visual reference of the office's location
+  - The Tic-Tac-Toe board. On their turn, the playe clicks on the position where the 'X' or 'O' should be placed. If the position has already been selected on a prior turn, an alert message will be displayed on the screen.
+  - The round ends once three 'X's or 'O's are placed in a row (horizontally, vertically or diagonally). The winnign positions will be highlighted in green. The game ends in a tie if the winning conditions are not met and the board is fully populated.
+  - At the end of each round, provided the round did not end in a tie, the winning player will score 1 point.
 
 ![Landing Page](https://github.com/rch79/MS1-Finance-Office/blob/master/assets/images/hero-image-index.jpg)
 
-- __Our Services Section__
-
-  - It states the role of the Finance Office within the University's organization to give site visitors a broad idea of the functions performed by the office staff
-  - It lists the services offered by the Finance Office
-
-![Our Services](https://github.com/rch79/MS1-Finance-Office/blob/master/assets/images/readme/our-services.PNG)
-
-- __The Footer__ 
-
-  - Featured at the bottom of each pages, it provides the users with the office’s main address, and external links to the Finance Office’s social media sites (Linkedin, Facebook, and Twitter)
-  - Users who wish to contact the Finance Office on one of these external sites can do so by clicking on the links provided
-
-![Footer](https://github.com/rch79/MS1-Finance-Office/blob/master/assets/images/readme/Footer.PNG)
-
-- __The Staff page__
-
-  - Lists the current staff of the Finance Office, including their contact details (name, job title, email address and phone number).
-  - Includes photos of each staff member to serve as a visual cue for walk in customers.
- 
-
-![Staff](https://github.com/rch79/MS1-Finance-Office/blob/master/assets/images/readme/staff-page.png)
-
-
-- __The Contact Us page__
-
-  - The form section enables site users to submit their inquiries to the Finance Office Staff. To submit an inquiry, the user must fill out the first name, last name, email address and the textarea sections. The phone number is optional
-  - The map (directions) section notifies site users that walk ins are welcome, and provides users with direftions to the Finance Office. A Google maps iframe is embedded for added convenience.
-
-
-![Contact Us](https://github.com/rch79/MS1-Finance-Office/blob/master/assets/images/readme/contact-us.png)
 
 
 ### Features Left to Implement
 
-- A Forms page, which would allow site users to search for and download an assortment of financial forms used on many Finance-related tasks in the University (ie, PO request form, petty cash request form etc).
-- A Policies page, which would provide site users with links to the varous financial policies in use by the University.
+- At some point it would be an interesting challenge to include some sort of rudimentary AI to enable single-player matched.  
 
 
 ## Testing 
 
-All hyperlinks were tested to see if they are working properly. Internal links open in the same tab. External links (in the footer) open in a new tab.
-
-Google Chrome developer tools were used to test resposive design. All three pages scale correclty on the following screen sizes:
+Google Chrome developer tools were used to test resposive design. Both pages scale correclty on the following screen sizes:
 
   - Moto G4 (360 x 640)
   - Galaxy S5 (360 X 640)
@@ -126,7 +97,7 @@ You will need to mention unfixed bugs and why they were not fixed. This section 
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link can be found here - https://rch79.github.io/MS1-Finance-Office/ 
+The live link can be found here - https://rch79.github.io/MS2-TicTacToe/ 
 
 
 ## Credits 
