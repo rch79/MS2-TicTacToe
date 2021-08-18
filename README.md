@@ -2,7 +2,7 @@
 
 This is a simple 2-player (local) Tic-Tac-Toe game. The users select whether player 1 will be using 'X'  or 'O' on the main page. The remaining shape is assigned automatically to player 2. At the end of each round the winner gets a point. No points are assigned if the round ends in a tie. The game continues ad infinitum. 
 
-![Responsive Mockup](https://github.com/rch79/MS1-Finance-Office/blob/master/assets/images/readme/responsive-site-mockup.PNG)
+![Responsive Mockup](https://github.com/rch79/MS2-TicTacToe/blob/main/assets/images/start_page_mockup.PNG)
 
 
 ### Existing Features
