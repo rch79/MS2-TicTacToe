@@ -13,6 +13,8 @@ This is a simple 2-player (local) Tic-Tac-Toe game. The users select whether pla
     - **The 'X' and the 'O' buttons:** Player 1 makes the selection by clicking on either the 'X' or the 'O' button. The remaining choice is automatically assigned to player 2
     - **The Start Game button:** The game starts this button is clicked, provided that the users have made their selection. The user will be notified if no selection is made.
 
+    ![Start Page](https://github.com/rch79/MS2-TicTacToe/blob/main/assets/images/start_page.PNG)
+
 
 - __The Game Page__
 
@@ -20,7 +22,7 @@ This is a simple 2-player (local) Tic-Tac-Toe game. The users select whether pla
   - The round ends once three 'X's or 'O's are placed in a row (horizontally, vertically or diagonally). The winnign positions will be highlighted in green. The game ends in a tie if the winning conditions are not met and the board is fully populated.
   - At the end of each round, provided the round did not end in a tie, the winning player will score 1 point.
 
-![Landing Page](https://github.com/rch79/MS1-Finance-Office/blob/master/assets/images/hero-image-index.jpg)
+    ![Game Page](https://github.com/rch79/MS2-TicTacToe/blob/main/assets/images/game_page.PNG)
 
 
 
