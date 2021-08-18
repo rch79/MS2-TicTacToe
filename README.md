@@ -62,7 +62,7 @@ At first players were able to keep filling additional boxes between the end of a
   - No errors were found when passing through the official [Jigsaw validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Frch79.github.io%2FMS2-TicTacToe%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).
 
 - JavaScript
- - No errors were found when running the script through [JSHint](https://jshint.com/):
+  - No errors were found when running the script through [JSHint](https://jshint.com/):
 
    <img src="https://github.com/rch79/MS2-TicTacToe/blob/main/assets/images/jshint_results.PNG">
 
@@ -96,7 +96,7 @@ The live link can be found here - https://rch79.github.io/MS2-TicTacToe/
 
 - The HTML and CSS layouts for the board game grid were obtained from Hammad Ahmed's [Tic-Tac-Toe game layout with CSS grid layout Codepen page](https://codepen.io/shammadahmed/pen/JOWEGW). Minor tweaks were made to the CSS.
 - This README file was created using the README template provided by the [Code Institute](https://codeinstitute.net/). The language used to describe the GitHub deployment process was copied verbatim from the template.
-- The fonts bangers and Montserrat are provided by [Google Fonts](https://fonts.google.com/).
+- The fonts Bangers and Montserrat are provided by [Google Fonts](https://fonts.google.com/).
 
 ### Media
 
