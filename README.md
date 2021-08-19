@@ -65,6 +65,7 @@ At first players were able to keep filling additional boxes between the end of a
 - JavaScript
   - No errors were found when running the script through [JSHint](https://jshint.com/) with the *new Javascript features (ES6)* option enabled:  
   
+  
 
    <img src="https://github.com/rch79/MS2-TicTacToe/blob/main/assets/images/jshint_results.PNG">
 
@@ -89,8 +90,7 @@ At first players were able to keep filling additional boxes between the end of a
   - In the GitHub repository, navigate to the Settings tab 
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
-
-The live link can be found here - https://rch79.github.io/MS2-TicTacToe/ 
+- Link to the game on GitHub pages: https://rch79.github.io/MS2-TicTacToe/ 
 
 
 ## Credits 
