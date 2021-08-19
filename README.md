@@ -1,6 +1,6 @@
 # Tic-Tac-Toe
 
-This is a simple 2-player (local) Tic-Tac-Toe game. The users select whether player 1 will be using 'X'  or 'O' on the main page. The remaining shape is assigned automatically to player 2. At the end of each round the winner gets a point. No points are assigned if the round ends in a tie. The game continues ad infinitum. 
+This is a simple 2-player (local) Tic-Tac-Toe game. The users select whether player 1 will be using 'X'  or 'O' on the main page. The remaining shape is assigned automatically to player 2. At the end of each round the winner gets a point. No points are assigned if the round ends in a tie. The first player to score 5 points wins the game. 
 
 ![Responsive Mockup](https://github.com/rch79/MS2-TicTacToe/blob/main/assets/images/mockups.PNG)
 
@@ -63,7 +63,7 @@ At first players were able to keep filling additional boxes between the end of a
 
 - JavaScript
   - No errors were found when running the script through [JSHint](https://jshint.com/):
-  
+
 
    <img src="https://github.com/rch79/MS2-TicTacToe/blob/main/assets/images/jshint_results.PNG">
 
