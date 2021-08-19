@@ -63,8 +63,8 @@ At first players were able to keep filling additional boxes between the end of a
   - No errors were found when passing through the official [Jigsaw validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Frch79.github.io%2FMS2-TicTacToe%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).
 
 - JavaScript
-  - No errors were found when running the script through [JSHint](https://jshint.com/) with the *new Javascript features (ES6)* option enabled:
-\
+  - No errors were found when running the script through [JSHint](https://jshint.com/) with the *new Javascript features (ES6)* option enabled:  
+  
 
    <img src="https://github.com/rch79/MS2-TicTacToe/blob/main/assets/images/jshint_results.PNG">
 
