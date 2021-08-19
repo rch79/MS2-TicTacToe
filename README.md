@@ -1,6 +1,7 @@
 # Tic-Tac-Toe
+[GitHub Pages(https://rch79.github.io/MS2-TicTacToe/)]
 
-This is a simple 2-player (local) Tic-Tac-Toe game. The users select whether player 1 will be using 'X'  or 'O' on the main page. The remaining shape is assigned automatically to player 2. At the end of each round the winner gets a point. No points are assigned if the round ends in a tie. The first player to score 5 points wins the game. 
+This is a simple 2-player (local) Tic-Tac-Toe game. The users select whether player 1 will be using 'X' or 'O' on the main page. The remaining shape is assigned automatically to player 2. At the end of each round the winner gets a point. No points are assigned if the round ends in a tie. The first player to score 5 points wins the game. 
 
 ![Responsive Mockup](https://github.com/rch79/MS2-TicTacToe/blob/main/assets/images/mockups.PNG)
 
@@ -19,8 +20,9 @@ This is a simple 2-player (local) Tic-Tac-Toe game. The users select whether pla
 - __The Game Page__
 
   - The Tic-Tac-Toe board. On their turn, the playe clicks on the position where the 'X' or 'O' should be placed. If the position has already been selected on a prior turn, an alert message will be displayed on the screen.
-  - The round ends once three 'X's or 'O's are placed in a row (horizontally, vertically or diagonally). The winnign positions will be highlighted in green. The game ends in a tie if the winning conditions are not met and the board is fully populated.
+  - The round ends once three 'X's or 'O's are placed in a row (horizontally, vertically or diagonally). The winning positions will be highlighted in green. The game ends in a tie if the winning conditions are not met and the board is fully populated.
   - At the end of each round, provided the round did not end in a tie, the winning player will score 1 point.
+  - The first player to score 5 points is declared the winner. The page will refresh after this to reset the game.
 
     ![Game Page](https://github.com/rch79/MS2-TicTacToe/blob/main/assets/images/game_page.PNG)
 
@@ -47,7 +49,6 @@ Google Chrome developer tools were used to test resposive design. Both pages sca
   - iPad Pro (1024 x 1366)
   - Surface Duo (540 x 720)
 
-Both pages have been checked for horizontal scroll bars produced by overflows (on all scree sizes).
 
 ### Bugs (fixed)
 
@@ -62,8 +63,8 @@ At first players were able to keep filling additional boxes between the end of a
   - No errors were found when passing through the official [Jigsaw validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Frch79.github.io%2FMS2-TicTacToe%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).
 
 - JavaScript
-  - No errors were found when running the script through [JSHint](https://jshint.com/):
-
+  - No errors were found when running the script through [JSHint](https://jshint.com/) with the *new Javascript features (ES6)* option enabled:
+/
 
    <img src="https://github.com/rch79/MS2-TicTacToe/blob/main/assets/images/jshint_results.PNG">
 
@@ -95,9 +96,9 @@ The live link can be found here - https://rch79.github.io/MS2-TicTacToe/
 
 ### Content 
 
-- The HTML and CSS layouts for the board game grid were obtained from Hammad Ahmed's [Tic-Tac-Toe game layout with CSS grid layout Codepen page](https://codepen.io/shammadahmed/pen/JOWEGW). Minor tweaks were made to the CSS.
+- The HTML and CSS layouts for the board game grid were sourced from Hammad Ahmed's [Tic-Tac-Toe game layout with CSS grid layout Codepen page](https://codepen.io/shammadahmed/pen/JOWEGW).
 - This README file was created using the README template provided by the [Code Institute](https://codeinstitute.net/). The language used to describe the GitHub deployment process was copied verbatim from the template.
-- The fonts Bangers and Montserrat are provided by [Google Fonts](https://fonts.google.com/).
+- The fonts [Bangers](https://fonts.google.com/specimen/Bangers) and [Montserrat](https://fonts.google.com/specimen/Montserrat) are available on the [Google Fonts](https://fonts.google.com/) website.
 
 ### Media
 
