@@ -64,7 +64,7 @@ At first players were able to keep filling additional boxes between the end of a
 
 - JavaScript
   - No errors were found when running the script through [JSHint](https://jshint.com/) with the *new Javascript features (ES6)* option enabled:
-/
+\
 
    <img src="https://github.com/rch79/MS2-TicTacToe/blob/main/assets/images/jshint_results.PNG">
 
