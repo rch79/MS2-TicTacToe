@@ -52,7 +52,7 @@ Google Chrome developer tools were used to test resposive design. Both pages sca
 
 ### Bugs (fixed)
 
-At first players were able to keep filling additional boxes between the end of a round and the beginning of a new one, triggering additional victory event loops before the new round began, which in turn caused additional, unwanted player score increments. The issue was resolved with the inclusion of a check on whether the player was clicking on the board in between rounds, and, if that was the case, disregarding player inputs until the new round started.
+At first players were able to keep clicking on and filling in empty positions in the 3x3 grid between the end of a round and the beginning of a new one, triggering additional victory event loops before the new round began, which in turn caused additional, unwanted player score increments. The issue was resolved with the inclusion of a check on whether the player is clicking on the 3x3 grid in between rounds and if that is the case, the script disregards player inputs until the new round has started.
 
 ### Validator Testing 
 
