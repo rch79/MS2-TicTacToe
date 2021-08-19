@@ -83,7 +83,8 @@ At first players were able to keep filling additional boxes between the end of a
 
 ## Deployment
 
-- The site was developed using the Windows 10 version of Sublime Text, in conjunction with the Github Desktop client
+- The site was developed using the Windows 10 version of Sublime Text, in conjunction with the Github Desktop client.
+- Because of the simple layout of the pages, no wireframes were used in the design stage.
 - The site was deployed to Github Pages using the following steps:
   - In the GitHub repository, navigate to the Settings tab 
   - From the source section drop-down menu, select the Master Branch
