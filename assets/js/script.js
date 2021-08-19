@@ -6,6 +6,9 @@ let gamePageHTML = `
         <div id="title">
             <h1>Tic-Tac-Toe</h1>
         </div>
+        <div id="rules">
+        	<h3>The first player to score 5 points wins the game!</h3>
+        </div
     </header>
     <section id="player-scores">
         <div id="player1-score">
@@ -87,19 +90,27 @@ function startGame() {
 	}
 }
 
+// flashes a message on the screen for 7 seconds and then refreshes the page to reset the game
 function endGame(message) {
 	setPlayerScores(); 		//updates player scores before refreshing the screen
 	document.getElementById("current-player").innerHTML = "";
 	// the sequence below flashes the alert message on the screen for a few seconds before the screen is refreshed	
-	document.getElementsByClassName("alert-message")[0].innerHTML = "<h3>" + message + "</h3>";
-	setTimeout(() => { document.getElementsByClassName("alert-message")[0].innerHTML = ""; }, 1000);
-	setTimeout(() => { document.getElementsByClassName("alert-message")[0].innerHTML = "<h3>" + message + "</h3>"; }, 2000);
-	setTimeout(() => { document.getElementsByClassName("alert-message")[0].innerHTML = ""; }, 3000);
-	setTimeout(() => { document.getElementsByClassName("alert-message")[0].innerHTML = "<h3>" + message + "</h3>"; }, 4000);
-	setTimeout(() => { document.getElementsByClassName("alert-message")[0].innerHTML = ""; }, 5000);
-	setTimeout(() => { document.getElementsByClassName("alert-message")[0].innerHTML = "<h3>" + message + "</h3>"; }, 6000);
-	setTimeout(() => { document.getElementsByClassName("alert-message")[0].innerHTML = ""; }, 7000);
-	setTimeout(() => { window.location.reload(); }, 7500);
+	document.getElementsByClassName("alert-message")[0].innerHTML = "<h3>" +
+	message + "</h3>"; setTimeout(() => { document.getElementsByClassName
+	("alert-message")[0].innerHTML = ""; }, 1000); setTimeout(() =>
+	{ document.getElementsByClassName("alert-message")
+	[0].innerHTML = "<h3>" + message + "</h3>"; }, 2000); setTimeout(
+	() => { document.getElementsByClassName("alert-message")
+	[0].innerHTML = ""; }, 3000); setTimeout(() =>
+	{ document.getElementsByClassName("alert-message")
+	[0].innerHTML = "<h3>" + message + "</h3>"; }, 4000); setTimeout(
+	() => { document.getElementsByClassName("alert-message")
+	[0].innerHTML = ""; }, 5000); setTimeout(() =>
+	{ document.getElementsByClassName("alert-message")
+	[0].innerHTML = "<h3>" + message + "</h3>"; }, 6000); setTimeout(
+	() => { document.getElementsByClassName("alert-message")
+	[0].innerHTML = ""; }, 7000); setTimeout(() =>{ window.location.reload
+	(); }, 7500);	//refreshes the page to reset the game
 }
 
 // Displays a custom message on the screen for a determined amount of time
@@ -348,7 +359,7 @@ function isEndRound() {
 	if (roundEnded === true) {
 		if (player1Choice === winner) {
 			player1Score += 1;
-			if (player1Score === 5) {
+			if (player1Score === 5) {				// first player to score 5 points wins the game
 				document.getElementById("current-player").innerHTML = "";
 				endGame("Player 1 is the Winner!!!");
 			} else {
