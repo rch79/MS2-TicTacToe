@@ -1,5 +1,5 @@
 # Tic-Tac-Toe
-[GitHub Pages(https://rch79.github.io/MS2-TicTacToe/)]
+[Try it out on GitHub Pages](https://rch79.github.io/MS2-TicTacToe/)
 
 This is a simple 2-player (local) Tic-Tac-Toe game. The users select whether player 1 will be using 'X' or 'O' on the main page. The remaining shape is assigned automatically to player 2. At the end of each round the winner gets a point. No points are assigned if the round ends in a tie. The first player to score 5 points wins the game. 
 
