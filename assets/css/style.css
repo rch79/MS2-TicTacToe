@@ -29,13 +29,16 @@ body {
 	font-size: 1.4rem;
 }
 
-/*--------------------------------------------------------Main Title-------------*/
+/*--------------------------------------------------------Header-------------*/
+#title, #subtitle, #rules {
+	text-align: center;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+}
+
 #title, #subtitle {
 	font-weight: 400;
 	font-size: 25px;
-	text-align: center;
-	letter-spacing: 4px;
-	text-transform: uppercase;	
 }
 
 #subtitle {
@@ -44,6 +47,10 @@ body {
 	padding-bottom: 10px;
 }
 
+#rules {
+	font-size: 6.25px;
+	margin-bottom: 5px;
+}
 /*----------------------------------------------------Player Selection-------------*/
 #player-selection {
 	letter-spacing: 2px;
@@ -128,7 +135,7 @@ body {
 
 #player-scores {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 0.8rem;
+	font-size: 0.6rem;
 }
 
 #player1-score, #player2-score {
@@ -175,7 +182,7 @@ body {
 /*--------------------------------------------------------Media Queries-------------*/
 /*------------------------------Min-Width:  300px----------*/
 @media (min-width: 300px) {
-
+/*----Header---*/
 	#title {
 		font-size: 30px;
 	}
@@ -184,18 +191,31 @@ body {
 		font-size: 11.7px;
 	}
 
+	#rules {
+		font-size:  7.5px;
+	}
+
+/*----Player Selection---*/
 	.post-selection-button-text {
 		font-size: 0.7rem;
 	}
 
+/*----Start Game---*/
 	#start-game-button {
 		font-size: 1rem;
 	}
 
+/*----Player Scores---*/
+	#player-scores {
+		font-size: 0.7rem;
+	}	
+
+/*----Board---*/
 	.game-board {
 		width: 300px;
 		height: 300px;
-	}	
+	}
+
 }
 
 /*------------------------------Min-Width:  400px----------*/
@@ -208,7 +228,7 @@ body {
 
 /*------------------------------Min-Width:  500px----------*/
 @media (min-width: 500px) {
-
+/*----Header---*/
 	#title {
 		font-size: 40px;
 	}
@@ -217,6 +237,11 @@ body {
 		font-size: 15.6px;
 	}
 
+	#rules {
+		font-size: 10px;
+	}
+
+/*----Player Selection---*/
 	#player-selection-text {
 		font-size: 1.2rem;
 	}
@@ -225,14 +250,17 @@ body {
 		font-size: 1rem;
 	}
 
+/*----Player Scores---*/
+	#player-scores {
+		font-size: 1rem;
+	}
+
+/*----Start Game---*/
 	#start-game-button {
 		font-size: 1.5rem;
 	}
 
-	#player-scores {
-		font-size: 1rem;
-	}		
-
+/*----Board---*/
 	.game-board {
 		width: 400px;
 		height: 400px;
@@ -240,7 +268,7 @@ body {
 }
 
 /*------------------------------Min-Width:  580px----------*/
-@media (min-width: 5800px) {
+@media (min-width: 580px) {
 
 	#player-scores {
 		font-size: 1.2rem;
@@ -249,7 +277,7 @@ body {
 
 /*------------------------------Min-Width:  960px----------*/
 @media (min-width: 960px) {
-
+/*----Header---*/
 	#title {
 		font-size: 60px;
 	}
@@ -258,6 +286,11 @@ body {
 		font-size: 23.5px;
 	}
 
+	#rules {
+		font-size: 15px;
+	}
+
+/*----Player Selection---*/
 	#player-selection-text {
 		font-size: 1.5rem;
 	}
@@ -278,6 +311,7 @@ body {
 		margin-right: 20%;	
 	}
 
+/*----Start Game---*/
 	#start-game-button {
 		margin-top: 250px;
 	}
