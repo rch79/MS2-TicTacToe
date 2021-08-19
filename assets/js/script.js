@@ -377,7 +377,8 @@ function isEndRound() {
 				alertMessage("Player 2 Wins This Round!!!", 3000);
 				setTimeout(startGame, 3000);
 			}			
-		} else {				
+		} else {
+			document.getElementById("current-player").innerHTML = "";				
 			alertMessage("It's a Tie!!!", 3000);
 			setTimeout(startGame, 3000);
 		}
