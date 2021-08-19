@@ -1,5 +1,6 @@
 //----------------------------------------------------------------------------------------game page HTML code-----
 // game page HTML code generated after the start button is clicked
+
 let gamePageHTML = `
     <header>
         <div id="title">
@@ -86,11 +87,27 @@ function startGame() {
 	}
 }
 
+function endGame(message) {
+	setPlayerScores(); 		//updates player scores before refreshing the screen
+	document.getElementById("current-player").innerHTML = "";
+	// the sequence below flashes the alert message on the screen for a few seconds before the screen is refreshed	
+	document.getElementsByClassName("alert-message")[0].innerHTML = "<h3>" + message + "</h3>";
+	setTimeout(() => { document.getElementsByClassName("alert-message")[0].innerHTML = ""; }, 1000);
+	setTimeout(() => { document.getElementsByClassName("alert-message")[0].innerHTML = "<h3>" + message + "</h3>"; }, 2000);
+	setTimeout(() => { document.getElementsByClassName("alert-message")[0].innerHTML = ""; }, 3000);
+	setTimeout(() => { document.getElementsByClassName("alert-message")[0].innerHTML = "<h3>" + message + "</h3>"; }, 4000);
+	setTimeout(() => { document.getElementsByClassName("alert-message")[0].innerHTML = ""; }, 5000);
+	setTimeout(() => { document.getElementsByClassName("alert-message")[0].innerHTML = "<h3>" + message + "</h3>"; }, 6000);
+	setTimeout(() => { document.getElementsByClassName("alert-message")[0].innerHTML = ""; }, 7000);
+	setTimeout(() => { window.location.reload(); }, 7500);
+}
+
 // Displays a custom message on the screen for a determined amount of time
 function alertMessage(message, duration) {
 	document.getElementsByClassName("alert-message")[0].innerHTML = "<h3>" + message + "</h3>";
 	setTimeout(() => { document.getElementsByClassName("alert-message")[0].innerHTML = ""; }, duration);
 }
+
 
 // Updates the page with the current player scores
 function setPlayerScores() {
@@ -128,7 +145,6 @@ function showActivePlayer() {
 	} else {
 		document.getElementById("current-player").innerHTML = "Player 2 Go! (" + player2Choice + ")";
 	}
-	
 }
 
 // Obtains current board state	
@@ -331,15 +347,27 @@ function isEndRound() {
 
 	if (roundEnded === true) {
 		if (player1Choice === winner) {
-			alertMessage("Player 1 Wins!!!", 3000);
 			player1Score += 1;
-			setTimeout(startGame, 3000);
+			if (player1Score === 5) {
+				document.getElementById("current-player").innerHTML = "";
+				endGame("Player 1 is the Winner!!!");
+			} else {
+				document.getElementById("current-player").innerHTML = "";
+				alertMessage("Player 1 Wins This Round!!!", 3000);
+				setTimeout(startGame, 3000);
+			}
 		} else if (player2Choice === winner) {
-			alertMessage("Player 2 Wins!!!", 3000);
 			player2Score += 1;
-			setTimeout(startGame, 3000);			
+			if (player2Score === 5) {
+				document.getElementById("current-player").innerHTML = "";
+				endGame("Player 2 is the Winner!!!");
+			} else {
+				document.getElementById("current-player").innerHTML = "";
+				alertMessage("Player 2 Wins This Round!!!", 3000);
+				setTimeout(startGame, 3000);
+			}			
 		} else {				
-			alertMessage("Everybody loses!!!", 3000);
+			alertMessage("It's a Tie!!!", 3000);
 			setTimeout(startGame, 3000);
 		}
 		return true;
