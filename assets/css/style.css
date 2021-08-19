@@ -21,12 +21,12 @@ body {
 
 .alert-message {
 	color: red;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 }
 
 #current-player {
 	color: black;
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 }
 
 /*--------------------------------------------------------Header-------------*/
@@ -224,6 +224,15 @@ body {
 	#player-scores {
 		font-size: 0.9rem;
 	}		
+}
+
+/*----Player Alert messages and score text---*/
+.alert-message {
+	font-size: 1.2rem;
+}
+
+#current-player {
+	font-size: 1.4rem;
 }
 
 /*------------------------------Min-Width:  500px----------*/
