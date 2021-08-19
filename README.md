@@ -19,7 +19,7 @@ This is a simple 2-player (local) Tic-Tac-Toe game. The users select whether pla
 
 - __The Game Page__
 
-  - The Tic-Tac-Toe board. On each turn, the player clicks on an empty postion in the 3x3 grid to place an 'X' or an 'O'. If the position has already been selected on a prior turn, an alert message will be displayed on the screen.
+  - On each turn, the player clicks on an empty postion in the 3x3 grid to place an 'X' or an 'O'. If the position has already been selected on a prior turn, an alert message will be displayed on the screen.
   - The round ends once three 'X's or 'O's are placed in a row (horizontally, vertically or diagonally). The winning positions will be highlighted in green. The game ends in a tie if the winning conditions are not met and the board is fully populated.
   - At the end of each round, provided it did not end in a tie, the winning player's score will be incremented by 1 point.
   - The first player to score 5 points is declared the winner. The page will refresh after this to reset the game.
